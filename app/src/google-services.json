@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "657094651436",
+    "firebase_url": "https://bsacco-2019.firebaseio.com",
+    "project_id": "bsacco-2019",
+    "storage_bucket": "bsacco-2019.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657094651436:android:d3127548d9979746",
+        "android_client_info": {
+          "package_name": "Bestsacco.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657094651436-8iarlu1m12rtbm46ljphoo1l9soa9i5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN2-sM78KPMYOE-ImPKBHii2gCNXqQevs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657094651436-8iarlu1m12rtbm46ljphoo1l9soa9i5g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
