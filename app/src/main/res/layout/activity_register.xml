@@ -1,77 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
     android:orientation="vertical"
-    android:weightSum="100"
-    android:padding="30dp"
-
-    tools:context=".loginActivity">
+    android:padding="20dp"
+    tools:context=".RegisterActivity">
 
     <TextView
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:gravity="center"
+        android:text="@string/Register"
         android:textAlignment="center"
-        android:textSize="30dp"
-        android:textAllCaps="false"
-        android:textStyle="bold"/>
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/registerImage"
+
+        android:id="@+id/reg_account"
         android:layout_width="126dp"
         android:layout_height="126dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_weight="10"
-        android:src="@drawable/log" />
-    <EditText
-        android:id="@+id/register_email"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:hint="Email"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/account" />
 
     <EditText
-        android:id="@+id/register_password"
-        android:textAlignment="center"
-        android:layout_marginTop="20dp"
+        android:id="@+id/userName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="password"/>
+        android:hint="@string/Username"
+        android:textAllCaps="false"
+        android:textSize="@dimen/inputs" />
 
     <EditText
-        android:id="@+id/register_cPassword"
-        android:textAlignment="center"
-        android:layout_marginTop="20dp"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Confirm Password"/>
+        android:hint="Email"
+        android:textSize="@dimen/inputs" />
+
+    <EditText
+        android:id="@+id/passWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="@dimen/inputs" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ConfirmPassword"
+        android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/register_btn"
-        android:background="@drawable/button_layout"
+        android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:text="@string/register"
-        android:textSize="22sp"
-        android:textAllCaps="false"
-        android:textAlignment="center"
-        />
+        android:background="@drawable/button_background"
+        android:text="@string/Register"
+        android:textAllCaps="false" />
+
     <TextView
-        android:id="@+id/register_txt"
+        android:id="@+id/txt_already_have_an_account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Are you a member?Sign in"
+        android:text="@string/already_hav_an_account"
+        android:layout_gravity="center_horizontal"
         android:textAlignment="center"
-        android:textSize="20dp"/>
-
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 </LinearLayout>

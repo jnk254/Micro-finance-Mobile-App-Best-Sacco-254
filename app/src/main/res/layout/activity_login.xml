@@ -1,71 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="100"
-    android:padding="30dp"
-
-    tools:context=".loginActivity">
+    tools:context=".LoginActivity">
 
     <TextView
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login"
+        android:gravity="center"
+        android:text="@string/Login"
         android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
         android:textSize="30sp"
-        android:textAllCaps="false"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        />
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/loginImage"
+
+        android:id="@+id/login_account"
         android:layout_width="126dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_weight="10"
-        android:src="@drawable/log" />
+        android:layout_height="126dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/account" />
 
     <EditText
-        android:id="@+id/username_login"
-        android:layout_marginTop="20dp"
+        android:id="@+id/login_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        android:autofillHints="@string/email"/>
+        android:hint="Email"
+        android:textSize="@dimen/inputs" />
 
     <EditText
-        android:id="@+id/password_login"
-        android:layout_marginTop="20dp"
+        android:id="@+id/login_passWord"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/password"
-        android:inputType="number"
-        android:autofillHints="@string/password"
-        tools:ignore="TextFields" />
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="@dimen/inputs" />
 
     <Button
-        android:id="@+id/login_btn"
-        android:background="@drawable/button_layout"
+        android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="@string/login"
-        android:textSize="22sp"
-        android:textAllCaps="false"
-        android:textAlignment="center"
-        />
+        android:background="@drawable/button_background"
+        android:text="@string/Login"
+        android:textAllCaps="false" />
+
     <TextView
-        android:id="@+id/login_txt"
+        android:id="@+id/not_a_member_yet"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="44dp"
         android:layout_marginTop="20dp"
-        android:text="@string/not_a_member_sign_up"
+        android:gravity="center"
+        android:text="@string/not_a_member_yet"
         android:textAlignment="center"
-        android:textSize="20sp"/>
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

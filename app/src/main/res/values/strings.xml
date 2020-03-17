@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">BSacco</string>
-    <string name="mission">Mission</string>
     <string name="get_started">Get_Started</string>
     <string name="register">Register</string>
     <string name="email">Email Address</string>
@@ -9,6 +8,23 @@
     <string name="password">Password</string>
     <string name="page1">Best SACCO</string>
     <string name="todo">TODO</string>
+    <string name="home_activity">Home activity</string>
+    <string name="type_something">Type something</string>
+    <string name="submit">Submit</string>
+    <string name="Register">Register</string>
+    <string name="already_hav_an_account">I Have An account?</string>
+    <string name="Username">Username</string>
+    <string name="not_a_member_yet">Create Acount Here</string>
+    <string name="Login">Login</string>
+    <string name="book_title">Book Title</string>
+    <string name="book_category">Book Category</string>
+    <string name="description">Description</string>
+    <string name="home">Home</string>
+    <string name="mission">Mission</string>
+    <string name="who">Who</string>
+    <string name="who_t">Who T</string>
+    <string name="about_benefits">about benefits</string>
+    <string name="benefit">benefit</string>
+
+
 </resources>
-
-
