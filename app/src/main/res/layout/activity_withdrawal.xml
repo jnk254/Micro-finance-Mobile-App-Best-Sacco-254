@@ -1,9 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Withdrawal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/withdrawal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/withdrawal_money"
+        android:textSize="30sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:text="@string/select_to_withdrawal"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <RadioButton
+            android:id="@+id/tompesa"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:text="@string/bsacco_to_mpesa"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/tobank"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:text="@string/bsacco_to_bank"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/withdrawalamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="@string/withdrawalamount"
+        android:maxLines="1"
+        android:paddingStart="5dp"
+        android:singleLine="true"
+        android:textAlignment="gravity"
+        android:textSize="@dimen/inputs"
+        android:autofillHints=""
+        android:inputType="number"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/btnwithdrawal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_background"
+        android:text="@string/withdrawal"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

@@ -1,9 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Deposit">
+    android:orientation="vertical"
+    tools:context=".Withdrawal">
+    <TextView
+        android:id="@+id/depositmoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/deposit_money"
+        android:textSize="30sp"
+        android:ems="10"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </TextView>
+
+    <TextView
+        android:id="@+id/selectdeposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_to_deposit"
+        android:textSize="25dp"
+        android:ems="10"
+        android:layout_marginTop="25dp"
+        tools:ignore="SpUsage" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="25dp">
+
+        <RadioButton
+            android:id="@+id/frommpesa"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mpesa_to_bsacco"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textSize="20dp"
+            tools:ignore="SpUsage" />
+
+        <RadioButton
+            android:id="@+id/frombank"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text= "@string/bank_to_bsacco"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:textSize="20dp"
+            tools:ignore="SpUsage" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/enterdepositamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_amount"
+        android:layout_marginTop="25dp"
+        android:maxLines="1"
+        android:paddingStart="5dp"
+        android:singleLine="true"
+        android:textAlignment="gravity"
+        android:textSize="@dimen/inputs"
+        tools:ignore="RtlSymmetry"
+        android:inputType="number"
+        android:autofillHints="" />
+    <Button
+        android:id="@+id/deposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:text="@string/deposit"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp" />
+
+
+
+
+
+</LinearLayout>

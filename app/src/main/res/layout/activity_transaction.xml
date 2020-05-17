@@ -5,80 +5,83 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Savings">
+    tools:context=".Transaction">
 
 
     <TextView
-        android:id="@+id/savings"
+        android:id="@+id/withdrawal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/savings"
-        android:textSize="30sp"
-        android:ems="10"
-        />
+        android:text="@string/transactions"
+        android:textSize="30sp">
+
+    </TextView>
 
     <EditText
-        android:id="@+id/saveamount"
+        android:id="@+id/transactionamount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_amount"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="28dp"
+        android:hint="@string/withdrawalamount"
         android:maxLines="1"
         android:paddingStart="5dp"
         android:singleLine="true"
         android:textAlignment="gravity"
-        android:textSize="@dimen/inputs"
-        tools:ignore="RtlSymmetry"
-        android:inputType="numberDecimal"
-        android:autofillHints="" />
+        android:textSize="20sp"
+        android:autofillHints=""
+        android:inputType="number"
+        tools:ignore="RtlSymmetry" />
 
     <TextView
-        android:id="@+id/savingtotal"
+        android:id="@+id/select"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/total_saving_amount"
-        android:layout_marginTop="25dp"
-        android:textSize="25sp"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        />
+        android:text="@string/select_for_transaction"
+        android:textSize="25sp" />
 
-    <TextView
-        android:id="@+id/displaysavingtotal"
+    <CheckBox
+        android:id="@+id/depositcheck"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:textSize="25sp"
-        android:ems="10"
-        />
-
-
-
-    <Button
-        android:id="@+id/savedeposit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_background"
+        android:layout_marginTop="28dp"
         android:text="Deposit"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:layout_marginTop="25dp"
-        tools:ignore="HardcodedText" />
-    <Button
-        android:id="@+id/savewithdrawal"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText"
+    />
+
+    <CheckBox
+        android:id="@+id/withdrawalcheck"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_background"
-        android:text="Withdraw"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="28dp"
+        android:text="Withdrawal"
+        android:textSize="25sp"
         tools:ignore="HardcodedText" />
 
 
+    <TextView
+        android:id="@+id/displaydepositedamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:ems="10"
+        />
+
+    <Button
+        android:id="@+id/btntransact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_background"
+        android:text="Transaction"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
 
 
 </LinearLayout>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bsacco">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bsacco"
+    tools:ignore="ExtraText">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,6 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Accdetails"></activity>
+        <activity android:name=".Updates" />
+        <activity android:name=".Bills" />
+        <activity android:name=".Investment" />
+        <activity android:name=".Transaction" />
+        <activity android:name=".account" />
         <activity android:name=".Transfer" />
         <activity android:name=".Savings" />
         <activity android:name=".Payments" />
@@ -25,9 +33,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Mission" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
     </application>
+    &lt;!--  Permission required for Downloading Files  --&gt;
+    &lt;uses-permission android:name="android.permission.INTERNET" /&gt;
 
+    &lt;!--  Permission required for Checking Internet Connection  --&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /&gt;
+
+    &lt;!--  Permission required for Reading Writing SD Card/Memory  --&gt;
+    &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;
+    &lt;uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /&gt;
 </manifest>

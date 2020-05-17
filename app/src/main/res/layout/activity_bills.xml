@@ -5,54 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Loan">
+    tools:context=".Bills">
+
     <TextView
-        android:id="@+id/apply"
+        android:id="@+id/bills"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/apply_loan"
+        android:text="Pay Bills"
         android:textSize="30sp"
         android:ems="10"
-        />
+        tools:ignore="HardcodedText" />
 
     <EditText
-        android:id="@+id/loan_amount"
+        android:id="@+id/billtype"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_loanamount"
+        android:hint="Enter Bill Type(Electricity)"
         android:layout_marginTop="25dp"
         android:maxLines="1"
         android:paddingStart="5dp"
         android:singleLine="true"
         android:textAlignment="gravity"
         android:textSize="@dimen/inputs"
-        tools:ignore="RtlSymmetry"
-        android:inputType="number"
+        tools:ignore="HardcodedText,RtlSymmetry"
+        android:inputType="text"
         android:autofillHints="" />
 
-    <TextView
-        android:id="@+id/select_loan"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/select_type_of_loan"
-        android:textSize="20sp"
-        android:ems="10"
-        />
-
-    <Spinner
-        android:id="@+id/loan_type"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:gravity="left"
-        tools:ignore="ExtraText,RtlHardcoded" />
 
     <EditText
-        android:id="@+id/loan_period"
+        android:id="@+id/billamount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/duration_month"
+        android:hint="@string/billamount"
         android:layout_marginTop="25dp"
         android:maxLines="1"
         android:paddingStart="5dp"
@@ -63,17 +47,33 @@
         android:inputType="date"
         android:autofillHints="" />
 
-
     <Button
-        android:id="@+id/apply_loan"
+        android:id="@+id/btnbill"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_background"
-        android:text="@string/apply"
-        android:textAllCaps="false"
-        android:textSize="16sp"
         android:layout_gravity="center"
-        android:layout_margin="35dp"
-        android:layout_marginTop="35dp"/>
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_background"
+        android:text="Pay"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+
+    <Button
+        android:id="@+id/btnbillview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_background"
+        android:text="View bill Paid"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+
 
 </LinearLayout>

@@ -1,14 +1,14 @@
 package com.example.bsacco;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Mission extends AppCompatActivity {
+import android.os.Bundle;
+
+public class Updates extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mission);
+        setContentView(R.layout.activity_updates);
     }
 }

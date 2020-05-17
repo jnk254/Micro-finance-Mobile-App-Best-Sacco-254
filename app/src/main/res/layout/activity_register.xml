@@ -21,11 +21,32 @@
     <de.hdodenhof.circleimageview.CircleImageView
 
         android:id="@+id/reg_account"
-        android:layout_width="126dp"
-        android:layout_height="126dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
         android:src="@drawable/account" />
+
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/full_name"
+        android:textAllCaps="false"
+        android:textSize="@dimen/inputs"
+        android:autofillHints=""
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/contact"
+        android:textAllCaps="false"
+        android:textSize="@dimen/inputs"
+        android:autofillHints=""
+        android:inputType="number" />
+
 
     <EditText
         android:id="@+id/userName"
@@ -33,14 +54,20 @@
         android:layout_height="wrap_content"
         android:hint="@string/Username"
         android:textAllCaps="false"
-        android:textSize="@dimen/inputs" />
+        android:textSize="@dimen/inputs"
+        android:autofillHints=""
+        android:inputType="text" />
+
 
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
-        android:textSize="@dimen/inputs" />
+        android:textSize="@dimen/inputs"
+        tools:ignore="HardcodedText"
+        android:autofillHints=""
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/passWord"
@@ -48,14 +75,18 @@
         android:layout_height="wrap_content"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textSize="@dimen/inputs" />
+        android:textSize="@dimen/inputs"
+        tools:ignore="HardcodedText"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/confirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="ConfirmPassword"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        tools:ignore="HardcodedText"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btn_register"
@@ -63,17 +94,20 @@
         android:layout_height="wrap_content"
         android:background="@drawable/button_background"
         android:text="@string/Register"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:layout_marginTop="25dp"/>
 
     <TextView
         android:id="@+id/txt_already_have_an_account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:text="@string/already_hav_an_account"
         android:layout_gravity="center_horizontal"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold" />
+
+
 </LinearLayout>

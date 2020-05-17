@@ -25,7 +25,43 @@
     <string name="who_t">Who T</string>
     <string name="about_benefits">about benefits</string>
     <string name="benefit">benefit</string>
-
+    <string name="withdrawal_money">Withdrawal money</string>
+    <string name="select_to_withdrawal">Select to Withdrawal</string>
+    <string name="bsacco_to_mpesa">Bsacco to mpesa</string>
+    <string name="bsacco_to_bank">Bsacco to Bank</string>
+    <string name="withdrawalamount">Enter Amount</string>
+    <string name="withdrawal">Withdrawal</string>
+    <string name="transfer_money">Transfer money</string>
+    <string name="enter_amount_to_transfer">Enter amount to transfer</string>
+    <string name="enter_account_number">Enter Account number</string>
+    <string name="transfer">Transfer</string>
+    <string name="deposit_money">Deposit money</string>
+    <string name="select_to_deposit">Select to Deposit</string>
+    <string name="mpesa_to_bsacco">Mpesa to Bsacco</string>
+    <string name="bank_to_bsacco">Bank to Bsacco</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="deposit">Deposit</string>
+    <string name="apply_loan">Apply Loan</string>
+    <string name="enter_loanamount">Enter amount</string>
+    <string name="duration_month">Duration(Month)</string>
+    <string name="apply">Apply</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="select_type_of_loan">Select type of loan</string>
+    <string name="services">Services</string>
+    <string name="select_date">Select date</string>
+    <string name="via_mpesa">via Mpesa</string>
+    <string name="via_credit_card">via Credit Card</string>
+    <string name="savings">Savings</string>
+    <string name="total_saving_amount">Total Saving Amount</string>
+    <string name="save">Save</string>
+    <string name="my_account">Account</string>
+    <string name="select_for_transaction">Select for transaction</string>
+    <string name="transactions">Transactions</string>
+    <string name="contact">Contact</string>
+    <string name="full_name">Full Name</string>
+    <string name="investment">Investment</string>
+    <string name="period">Period</string>
+    <string name="billamount">Enter Amount</string>
 
 
 </resources>

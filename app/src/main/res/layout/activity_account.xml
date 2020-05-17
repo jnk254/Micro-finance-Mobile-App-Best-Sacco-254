@@ -5,80 +5,81 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Savings">
+    tools:context=".account">
 
 
     <TextView
-        android:id="@+id/savings"
+        android:id="@+id/myaccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/savings"
+        android:text="@string/my_account"
         android:textSize="30sp"
         android:ems="10"
         />
 
     <EditText
-        android:id="@+id/saveamount"
+        android:id="@+id/accounttype"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_amount"
-        android:layout_marginTop="25dp"
-        android:maxLines="1"
-        android:paddingStart="5dp"
-        android:singleLine="true"
-        android:textAlignment="gravity"
+        android:hint="Enter type of account(Personal Account)"
+        android:textAllCaps="false"
         android:textSize="@dimen/inputs"
-        tools:ignore="RtlSymmetry"
-        android:inputType="numberDecimal"
-        android:autofillHints="" />
+        android:autofillHints=""
+        android:inputType="text"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:id="@+id/btn_accNo"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_background"
+        android:text="get AccNO"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/savingtotal"
+        android:id="@+id/displayacctype"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/total_saving_amount"
-        android:layout_marginTop="25dp"
-        android:textSize="25sp"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         />
 
     <TextView
-        android:id="@+id/displaysavingtotal"
+        android:id="@+id/accountbal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:text="Account Balance"
+        android:layout_marginTop="10dp"
         android:textSize="25sp"
         android:ems="10"
-        />
+        tools:ignore="HardcodedText" />
 
-
+    <TextView
+        android:id="@+id/displayaccbal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KSH 0"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        tools:ignore="HardcodedText" />
 
     <Button
-        android:id="@+id/savedeposit"
+        android:id="@+id/btn_accdetails"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button_background"
-        android:text="Deposit"
-        android:textAllCaps="false"
-        android:textSize="16sp"
+        android:text="Account Details"
         android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textSize="20sp"
         android:layout_margin="20dp"
         android:layout_marginTop="25dp"
         tools:ignore="HardcodedText" />
-    <Button
-        android:id="@+id/savewithdrawal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_background"
-        android:text="Withdraw"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:layout_marginTop="25dp"
-        tools:ignore="HardcodedText" />
-
-
 
 
 </LinearLayout>

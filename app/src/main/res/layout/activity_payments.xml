@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Payments">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/payments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/make_payment"
+        android:textSize="30sp"
+        android:ems="10"
+       />
+
+    <EditText
+        android:id="@+id/payamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_amount"
+        android:layout_marginTop="25dp"
+        android:maxLines="1"
+        android:paddingStart="5dp"
+        android:singleLine="true"
+        android:textAlignment="gravity"
+        android:textSize="@dimen/inputs"
+        tools:ignore="RtlSymmetry"
+        android:inputType="number"
+        android:autofillHints="" />
+
+
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:text="PAY"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        tools:ignore="HardcodedText" />
+
+
+
+
+
+
+</LinearLayout>
